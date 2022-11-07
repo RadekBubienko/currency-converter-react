@@ -12,7 +12,6 @@ function App() {
       .find(({ short }) => short === currency)
       .rate;
 
-
     setResult({
       sourceAmount: +amount,
       targetAmount: amount / rate,
@@ -21,21 +20,15 @@ function App() {
   };
 
   return (
-
     <Container>
-
       <Header
         title="Kalkulator walut"
       />
-
       <Form
         result={result}
         calculateResult={calculateResult}
       />
-
     </Container>
-
-
   );
 };
 
