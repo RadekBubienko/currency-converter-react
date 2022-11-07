@@ -6,6 +6,9 @@ created by Radek Bubienko
 ### Description
 Hello everyone. You can see the Currency Converter website here. You can convert Polish zloty to Euros, US Dollars or British Pound.
 
+## Demo
+Open [https://radekbubienko.github.io/currency-converter-react/](https://radekbubienko.github.io/currency-converter-react/)
+
 ### Technologies
 To create the page I used:
 
