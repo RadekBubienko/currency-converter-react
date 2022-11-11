@@ -5,24 +5,24 @@
     padding: 15px 30px 10px 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px black;
-    height: 435px;
+    height: 440px;
   }
 
   @media (max-width: 474px) {
     .container {
-        height: 470px;
+        height: 480px;
         margin: 10px;
     }
   }
 
   @media (max-width: 413px) {
     .container {
-        height: 500px;
+        height: 520px;
     }
   }
 
   @media (max-width: 357px) {
     .container {
-        height: 540px;
+        height: 570px;
     }
   }
