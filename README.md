@@ -1,7 +1,7 @@
 # Currency Converter
 created by Radek Bubienko
 
-![Screenshot](public/curencyConverter.png)
+![Screenshot](public/currencyConverter.png)
 
 ### Description
 Hello everyone. You can see the Currency Converter website here. You can convert Polish zloty to Euros, US Dollars or British Pound.
