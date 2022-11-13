@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./style.css";
 import { currencies } from "../currencies";
 import Result from "../Result";
 import { Fieldset, StyledForm, Legend, Label, Span, Input, Select, Button } from "./styled";
