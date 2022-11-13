@@ -1,7 +1,7 @@
-import "./style.css";
+import { StyledParagraph } from "./styled";
 
 const Result = ({ result }) => (
-    <p className="result">
+    <StyledParagraph>
         {result !== undefined && (
           <>
             {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=
@@ -11,7 +11,7 @@ const Result = ({ result }) => (
             </strong>
           </>   
         )}
-    </p>
+    </StyledParagraph>
 );
 
 export default Result;
