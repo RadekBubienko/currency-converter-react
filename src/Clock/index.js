@@ -1,5 +1,5 @@
 import CurrentDate from "../CurrentDate";
-import "./style.css";
+import { ClockContainer } from "./styled";
 
 const Clock = () => {
 
@@ -20,9 +20,9 @@ const Clock = () => {
 
   return (
     <>
-      <div className="clock">
+      <ClockContainer>
         {dateRender}, {timeRender}
-      </div>
+      </ClockContainer>
     </>
   )
 };
