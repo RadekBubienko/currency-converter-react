@@ -66,7 +66,7 @@ const Form = ({ calculateResult, result }) => {
 
          </fieldset>
          <p><button className="form__button">Przelicz</button></p>
-         
+                 
          <Result
             result={result}
          />
