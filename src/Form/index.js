@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./style.css";
 import { currencies } from "../currencies";
 import Result from "../Result";
+import { Fieldset, StyledForm, Legend, Label, Span, Input, Select, Button } from "./styled";
 
 
 const Form = ({ calculateResult, result }) => {
@@ -15,23 +16,21 @@ const Form = ({ calculateResult, result }) => {
       calculateResult(currency, amount);
    };
    return (
-      <form
-         className="form"
+      <StyledForm
          onSubmit={onFormSubmit}
       >
-         <fieldset className="form__fieldset">
-            <legend className="form__legend">
+         <Fieldset>
+            <Legend className="form__legend">
                Wprowadź kwotę do przeliczenia
-            </legend>
+            </Legend>
 
-            <label>
-               <span className="form__labelText">
+            <Label>
+               <Span>
                   Mam*:
-               </span>
-               <input 
+               </Span>
+               <Input 
                   value={amount} 
                   onChange={onInputChange} 
-                  className="form__field" 
                   type="number" 
                   min="1" 
                   step="any" 
@@ -39,15 +38,14 @@ const Form = ({ calculateResult, result }) => {
                   required 
                />
                
-            </label>
+            </Label>
 
-            <label>
-               <span className="form__labelText">
+            <Label>
+               <Span>
                   Przeliczam na*:
-               </span>
-               <select 
+               </Span>
+               <Select 
                   value={currency} 
-                  className="form__field" 
                   type="select" 
                   required
                   onChange={onSelectChange}
@@ -61,16 +59,16 @@ const Form = ({ calculateResult, result }) => {
                      </option>
                   )))};
                   
-               </select>
-            </label>
+               </Select>
+            </Label>
 
-         </fieldset>
-         <p><button className="form__button">Przelicz</button></p>
+         </Fieldset>
+         <p><Button>Przelicz</Button></p>
                  
          <Result
             result={result}
          />
-      </form>
+      </StyledForm>
    );
 };
 
