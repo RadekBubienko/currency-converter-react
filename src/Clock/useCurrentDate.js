@@ -4,12 +4,12 @@ export const useCurrentDate = () => {
     const [myDate, setMyDate] = useState(new Date());
 
     useEffect(() => {
-      const intervalId = setInterval(() => {
-        setMyDate(new Date())
-      }, 1000);
+        const intervalId = setInterval(() => {
+            setMyDate(new Date())
+        }, 1000);
 
-    return () => {
-      clearInterval(intervalId);
+        return () => {
+            clearInterval(intervalId);
         };
     }, []);
 
@@ -18,17 +18,17 @@ export const useCurrentDate = () => {
         weekday: "long",
         day: "numeric",
         year: "numeric",
-      });
-    
-      const timeRender = myDate.toLocaleTimeString(undefined, {
+    });
+
+    const timeRender = myDate.toLocaleTimeString(undefined, {
         hour: "numeric",
         minute: "numeric",
         second: "numeric",
-      });
+    });
 
-    return { 
+    return {
         myDate,
         dateRender,
         timeRender,
     };
-  };
+};
