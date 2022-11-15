@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
 import Result from "../Result";
-import { Fieldset, StyledForm, Legend, Label, Span, Input, Select, Button } from "./styled";
+import { Fieldset, StyledForm, Legend, Label, LabelText, Input, Select, Button } from "./styled";
 
 
 const Form = ({ calculateResult, result }) => {
@@ -24,9 +24,9 @@ const Form = ({ calculateResult, result }) => {
             </Legend>
 
             <Label>
-               <Span>
+               <LabelText>
                   Mam*:
-               </Span>
+               </LabelText>
                <Input 
                   value={amount} 
                   onChange={onInputChange} 
@@ -40,9 +40,9 @@ const Form = ({ calculateResult, result }) => {
             </Label>
 
             <Label>
-               <Span>
+               <LabelText>
                   Przeliczam na*:
-               </Span>
+               </LabelText>
                <Select 
                   value={currency} 
                   type="select" 

@@ -16,9 +16,9 @@ export const Legend = styled.legend`
     margin-bottom: 15px;
 `;
 
-export const Label = styled.label``;
+export const Label = styled.span``;
 
-export const Span = styled.span`
+export const LabelText = styled.span`
     width: 100%;
     max-width: 125px;
     display: inline-block;
