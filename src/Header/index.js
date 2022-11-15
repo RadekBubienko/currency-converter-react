@@ -1,5 +1,5 @@
-import { StyledHeader } from "./styled";
+import { Title } from "./styled"
 
-const Header = () => <StyledHeader>Kalkulator walut</StyledHeader>;
+const Header = () => <Title>Kalkulator walut</Title>;
 
 export default Header;
