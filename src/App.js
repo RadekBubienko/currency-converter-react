@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Container from "./Container";
+import { Container } from "./Container/styled";
 import Header from "./Header";
 import Form from "./Form";
 import { currencies } from "./currencies";
@@ -22,9 +22,7 @@ function App() {
 
   return (
     <Container>
-      <Header
-        title="Kalkulator walut"
-      />
+      <Header />
       <Clock />
       <Form
         result={result}
