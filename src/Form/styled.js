@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const StyledForm = styled.form``;
 
 export const Fieldset = styled.fieldset`
-    border: 3px solid #aac3bd;
+    border: 3px solid ${({ theme }) => theme.color.lightTeal};
     padding: 20px;
     border-radius: 5px;
 `;
 
 export const Legend = styled.legend`
-    background-color: #008080;
-    color: white;
+    background-color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
@@ -27,7 +27,7 @@ export const LabelText = styled.span`
 `;
 
 export const Input = styled.input`
-    border: 2px solid #ccc;
+    border: 2px solid ${({ theme }) => theme.color.lightTeal};
     padding: 10px;
     width: 100%;
     max-width: 210px;
@@ -35,12 +35,12 @@ export const Input = styled.input`
     margin: 0px 5px 20px 0px;
 
     &:required {
-        border-color: #777;
+        border-color: ${({ theme }) => theme.color.lightTeal};
     }
 `;
 
 export const Select = styled.select`
-    border: 2px solid #ccc;
+    border: 2px solid ${({ theme }) => theme.color.lightTeal};
     padding: 10px;
     width: 100%;
     max-width: 210px;
@@ -48,27 +48,27 @@ export const Select = styled.select`
     margin: 0px 5px 20px 0px;
 
     &:required {
-        border-color: #777;
+        border-color: ${({ theme }) => theme.color.lightTeal};
     }
 `;
 
 export const Button = styled.button`
     text-align: center;
-    width: 33.3333333333%;
+    width: 33.33333333334%;
     border: none;
-    background-color: #008080;
-    color: white;
+    background-color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     padding: 10px;
     border-radius: 5px;
     margin: 15px auto;
     display: block;
 
 
-@media (max-width: 474px) {
+@media (max-width: ${({ theme }) => theme.breakpoint.mobileMidButton}px) {
         width: 100%;
     }
 
     &:hover {
-        background-color: #005757;
+        background-color: ${({ theme }) => theme.color.darkGreen};
     }
 `;
