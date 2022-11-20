@@ -21,9 +21,9 @@ const Clock = () => {
   });
 
   return (
-      <ClockContainer>
-        {dateRender}, {timeRender}
-      </ClockContainer>
+    <ClockContainer>
+      Dzisiaj jest {dateRender}, {timeRender}
+    </ClockContainer>
   )
 };
 

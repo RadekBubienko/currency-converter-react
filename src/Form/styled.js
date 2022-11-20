@@ -72,3 +72,15 @@ export const Button = styled.button`
         background-color: ${({ theme }) => theme.color.darkGreen};
     }
 `;
+
+export const Loading = styled.p`
+    color: ${({ theme }) => theme.color.teal};
+`;
+
+export const Failure = styled.p`
+    color: ${({ theme }) => theme.color.crimson};
+`;
+
+export const Info = styled.p`
+    font-size: 12px;
+`;

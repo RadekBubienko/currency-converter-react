@@ -7,11 +7,12 @@ export const theme = {
         black: "#000",
         white: "#fff",
         darkGreen: "#005757",
+        crimson: "#db143c",
     },
 
     breakpoint: {
-        mobileMax: 767,
-        mobileMid: 413,
+        mobileMax: 474,
+        mobileMid: 449,
         mobileMin: 357,
         mobileMidButton: 474,
     },
