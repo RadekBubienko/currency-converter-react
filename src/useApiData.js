@@ -1,12 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-axios.defaults.headers = {
-  'Cache-Control': 'no-cache',
-  'Pragma': 'no-cache',
-  'Expires': '0',
-};
-
 export const useApiData = () => {
   const [ratesData, setRatesData] = useState({
     state: "loading",
