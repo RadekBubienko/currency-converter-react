@@ -1,4 +1,4 @@
-# Currency Converter
+# Currency Converter 💲
 created by Radek Bubienko
 
 ![Screenshot](public/currencyConverter.png)
@@ -14,9 +14,12 @@ To create the page I used:
 
 - HTML
 - CSS
-- JavaScript
-- BEM convention
+- JavaScript ES6+
+- JSX
 - React Create App
+- React Hooks
+- Axios
+- Data download from API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
