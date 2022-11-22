@@ -30,7 +30,7 @@ const Form = () => {
    };
 
    const currenciesDate = ratesData.date;
-   //const formattedDate =`${currenciesDate.slice(8)}-${currenciesDate.slice(5,7)}-${currenciesDate.slice(0,4)}`;
+   const formattedDate = currenciesDate && `${currenciesDate.slice(8)}-${currenciesDate.slice(5,7)}-${currenciesDate.slice(0,4)}`;
    const [amount, setAmount] = useState("");
    const onInputChange = ({ target }) => setAmount(target.value);
    const [currency, setCurrency] = useState("EUR");
@@ -110,7 +110,7 @@ const Form = () => {
                         <p><Button>Przelicz</Button></p>
 
                         <Info>Kursy walut pobierane są z Europejskiego Banku Centralnego.<br />
-                           Z dnia <strong>{currenciesDate}</strong>
+                           Z dnia <strong>{formattedDate}</strong>
                         </Info>
 
                         <Result result={result} />
