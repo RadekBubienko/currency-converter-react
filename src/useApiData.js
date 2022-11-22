@@ -9,7 +9,7 @@ export const useApiData = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get("https://api.exchangerate.host/latest?base=PLN");
+        const response = await axios.get("https://api.exchangerate.host/latest?base=PLN&+ new Date()");
 
         const { rates, date } = response.data;
 
@@ -18,15 +18,12 @@ export const useApiData = () => {
           rates,
           date,
         });
-
       } catch (error) {
         setRatesData({
           state: "error",
         });
-
       }
     };
-
     setTimeout(getData, 1000);
   }, []);
 
