@@ -15,11 +15,6 @@ import {
 } from "./styled";
 import { useApiData } from "../useApiData";
 
-const errorText = <span>Ups... coś poszłonie tak 😒<br />
-   Sprawdż połączenie internetowe!<br />Jeżeli połączenie jest OK to może nasza wina 🤷‍♂️<br />Spróbuj za jakiś czas.</span>;
-
-const loadingText = <span>🕧 Chwilka...<br />🔨 Pobieramy kusy walut z Europejskiego Banku Centralnego.</span>;
-
 const Form = () => {
    const [result, setResult] = useState();
    const ratesData = useApiData();
@@ -35,6 +30,7 @@ const Form = () => {
    };
 
    const currenciesDate = ratesData.date;
+   //const formattedDate =`${currenciesDate.slice(8)}-${currenciesDate.slice(5,7)}-${currenciesDate.slice(0,4)}`;
    const [amount, setAmount] = useState("");
    const onInputChange = ({ target }) => setAmount(target.value);
    const [currency, setCurrency] = useState("EUR");
@@ -51,14 +47,18 @@ const Form = () => {
          {ratesData.state === "loading"
             ? (
                <Loading>
-                  {loadingText}
+                  <span>
+                     🕧 Chwilka...<br />🔨 Pobieramy kusy walut z Europejskiego Banku Centralnego.
+                  </span>
                </Loading>
             )
             : (
                ratesData.state === "error"
                   ? (
                      <Failure>
-                        {errorText}
+                        <span>Ups... coś poszłonie tak 😒<br />
+                           Sprawdż połączenie internetowe!<br />Jeżeli połączenie jest OK to może nasza wina 🤷‍♂️<br />Spróbuj za jakiś czas.
+                        </span>
                      </Failure>
                   ) : (
                      <>
