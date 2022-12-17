@@ -30,10 +30,11 @@ const Form = () => {
    };
 
    const currenciesDate = ratesData.date;
-   const formattedDate = currenciesDate && `${currenciesDate.slice(8)}-${currenciesDate.slice(5,7)}-${currenciesDate.slice(0,4)}`;
+   const formattedDate = currenciesDate && `${currenciesDate.slice(8)}-${currenciesDate.slice(5, 7)}-${currenciesDate.slice(0, 4)}`;
+
    const [amount, setAmount] = useState("");
-   const onInputChange = ({ target }) => setAmount(target.value);
    const [currency, setCurrency] = useState("EUR");
+   const onInputChange = ({ target }) => setAmount(target.value);
    const onSelectChange = ({ target }) => setCurrency(target.value);
 
    const onFormSubmit = (event) => {
